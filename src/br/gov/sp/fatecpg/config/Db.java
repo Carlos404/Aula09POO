@@ -20,4 +20,21 @@ public class Db {
 		}
 		return clientes;
 	}
+        
+        private static ArrayList<Fornecedor> fornecedores;
+
+	public static ArrayList<Fornecedor> getFornecedores() {
+		if (fornecedores == null) {
+			fornecedores = new ArrayList<>();
+			Fornecedor forn = new Fornecedor();
+			forn.setNome("ALFA MATERIAIS");
+			forn.setRazaosocial("Alfa Material de Escritorio LTDA");
+			forn.setCnpj("97352605000111");
+			forn.setEmail("alfa@alfa.com");
+			forn.setTelefone("1330242086'");
+			forn.setEndereco("rua das andorinhas");
+			fornecedores.add(forn);
+		}
+		return fornecedores;
+	}
 }
