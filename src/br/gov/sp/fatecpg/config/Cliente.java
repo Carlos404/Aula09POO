@@ -3,10 +3,10 @@ package br.gov.sp.fatecpg.config;
 public class Cliente {
 
 	private String nome;
-	private int cpf;
-	private int rg;
+	private String cpf;
+	private String rg;
 	private String email;
-	private int telefone;
+	private String telefone;
 	private String endereco;
 
 	public String getNome() {
@@ -17,19 +17,19 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 
-	public int getRg() {
+	public String getRg() {
 		return rg;
 	}
 
-	public void setRg(int rg) {
+	public void setRg(String rg) {
 		this.rg = rg;
 	}
 
@@ -41,11 +41,11 @@ public class Cliente {
 		this.email = email;
 	}
 
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(int telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 
